@@ -1,0 +1,52 @@
+Q5. Explain the difference between Justify-Items and Justify-Self using code examples.
+Answer 5 <h3> justify-items:</h3>
+<p>The justify-items property is set on the grid container to give child elements (grid items) alignment in the inline direction.</p> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#container {
+  width: 50%;
+  aspect-ratio: 2/1;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+#container > div {
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 50%;
+}
+
+.red {
+  background-color: coral;
+  width: 40%;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 60%;
+}
+</style>
+</head>
+<body>
+
+<h2>justify-items: end</h2>
+
+<div id="container">
+  <div class="red">RED</div>
+  <div class="blue">BLUE</div>  
+
+  <div class="green">GREEN</div>
+  <div class="red">RED</div>
+</div>
+
+</body>
+</html>
